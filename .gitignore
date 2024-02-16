@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.exercism/
+
+*.md
+*_test.py
+
+*.json
