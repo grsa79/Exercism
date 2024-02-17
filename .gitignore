@@ -6,3 +6,5 @@ __pycache__/
 *_test.py
 
 *.json
+
+.DS_Store
