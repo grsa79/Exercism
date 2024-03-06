@@ -1,4 +1,9 @@
-COLOR_CODE = ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"]
+COLOR_CODE = ["black", "brown", 
+              "red", "orange", 
+              "yellow", "green", 
+              "blue", "violet", 
+              "grey", "white"]
+
 
 def color_code(color: str) -> int:
     """
@@ -6,10 +11,9 @@ def color_code(color: str) -> int:
     :color: str - color of the band
     :returns: int - corresponing number
     """
-    try:
-        return COLOR_CODE.index(color)
-    except:
-        raise ValueError("no valid color given")
+    if not color in COLOR_CODE: raise ValueError("no valid color given")
+    return COLOR_CODE.index(color)
+    
 
 def colors() -> list:
     """
